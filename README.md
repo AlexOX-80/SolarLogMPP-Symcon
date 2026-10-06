@@ -38,9 +38,13 @@ Der zurückgegebene Tagesdatensatz besteht aus 5-Minuten-Zeilen. Für die vorlie
 
 Index 7 wird bewusst nicht verwendet, solange seine Bedeutung nicht sicher identifiziert ist.
 
-## Installation
+## Installation in IP-Symcon
 
-Die Bibliothek als Git-Repository bereitstellen und in IP-Symcon unter **Module Control** hinzufügen. Alternativ kann der Ordner für lokale Entwicklung in das IP-Symcon-Modulverzeichnis gelegt werden.
+Unter **Kerninstanzen → Modules / Module Control → Hinzufügen** dieses Repository eintragen:
+
+```text
+https://github.com/AlexOX-80/SolarLogMPP-Symcon.git
+```
 
 Danach eine Instanz **Solar-Log MPP Tracker** anlegen und die Voreinstellungen prüfen.
 
