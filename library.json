@@ -1,0 +1,12 @@
+{
+  "id": "{7B9E37A8-5B53-4C1C-A673-1E906A90B59B}",
+  "author": "Alexander Ochs / OpenAI",
+  "name": "SolarLog MPP",
+  "url": "https://github.com/AlexOX-80/SolarLogMPP-Symcon",
+  "compatibility": {
+    "version": "8.0"
+  },
+  "version": "0.1",
+  "build": 1,
+  "date": 1791320400
+}
