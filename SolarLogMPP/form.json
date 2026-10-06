@@ -1,0 +1,122 @@
+{
+  "elements": [
+    {
+      "type": "ValidationTextBox",
+      "name": "Host",
+      "caption": "Solar-Log Host / IP"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Interval",
+      "caption": "Abfrageintervall (Sekunden)",
+      "minimum": 60
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "Timeout",
+      "caption": "HTTP-Timeout (Sekunden)",
+      "minimum": 1,
+      "maximum": 30
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "InverterIndex",
+      "caption": "Wechselrichter-Index",
+      "minimum": 0
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "MPP 1 – Wohnhaus",
+      "items": [
+        {
+          "type": "ValidationTextBox",
+          "name": "MPP1Name",
+          "caption": "Name"
+        },
+        {
+          "type": "NumberSpinner",
+          "name": "MPP1kWp",
+          "caption": "Generatorleistung (kWp)",
+          "digits": 3,
+          "minimum": 0
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "MPP 2 – Garage",
+      "items": [
+        {
+          "type": "ValidationTextBox",
+          "name": "MPP2Name",
+          "caption": "Name"
+        },
+        {
+          "type": "NumberSpinner",
+          "name": "MPP2kWp",
+          "caption": "Generatorleistung (kWp)",
+          "digits": 3,
+          "minimum": 0
+        }
+      ]
+    },
+    {
+      "type": "ExpansionPanel",
+      "caption": "Erweitert",
+      "expanded": false,
+      "items": [
+        {
+          "type": "NumberSpinner",
+          "name": "SeriesIndex",
+          "caption": "Solar-Log Datenreihen-Index",
+          "minimum": 0
+        },
+        {
+          "type": "NumberSpinner",
+          "name": "FreshnessMinutes",
+          "caption": "Maximales Alter eines Messpunkts (Minuten)",
+          "minimum": 5
+        },
+        {
+          "type": "ValidationTextBox",
+          "name": "Token",
+          "caption": "Token (normalerweise leer)"
+        },
+        {
+          "type": "ValidationTextBox",
+          "name": "Cookie",
+          "caption": "Cookie (normalerweise banner_hidden=false)"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "caption": "Jetzt aktualisieren",
+      "onClick": "echo SLMPP_Update($id);"
+    },
+    {
+      "type": "Button",
+      "caption": "Rohdaten testen",
+      "onClick": "echo SLMPP_Test($id);"
+    }
+  ],
+  "status": [
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Solar-Log MPP aktiv"
+    },
+    {
+      "code": 104,
+      "icon": "inactive",
+      "caption": "Host nicht konfiguriert"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Solar-Log Abfrage fehlgeschlagen"
+    }
+  ]
+}
