@@ -1,0 +1,14 @@
+{
+  "id": "{AA90B6C9-412E-4A97-B774-2C3C9A4066B4}",
+  "name": "SolarLog MPP",
+  "type": 3,
+  "vendor": "Solar-Log",
+  "aliases": [
+    "Solar-Log MPP Tracker"
+  ],
+  "url": "https://github.com/AlexOX-80/SolarLogMPP-Symcon",
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SLMPP"
+}
